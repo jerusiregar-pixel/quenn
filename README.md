@@ -1,40 +1,40 @@
-# Landing Page GMA Affiliate — Queen
+# GMA Queen Landing Page — Revisi
 
-Website statis, mobile-first, dan siap di-host melalui GitHub Pages atau Vercel.
+Landing page promosi **GMA Affiliate by GarudaQu** untuk **Queen**.
 
-## Cara mengganti poster
-1. Siapkan poster dalam format JPG.
-2. Ubah nama file menjadi `poster.jpg`.
-3. Masukkan ke folder `assets/`.
+## File utama
+- `index.html` → struktur halaman
+- `style.css` → tampilan / desain
+- `script.js` → link pendaftaran, WhatsApp, video, dan data testimoni
+- `assets/poster.jpg` → poster utama
+- `assets/legalitas-1.png` s/d `assets/legalitas-4.png` → placeholder foto legalitas
 
-Lokasi akhir:
-`assets/poster.jpg`
+## Yang sudah direvisi
+1. Hero CTA dibersihkan (tanpa list "tanpa stok barang" dan tanpa microcopy di bawah tombol).
+2. Bagian keluh kesah dibuat mengikuti arahan screenshot: masalah user + panel impian berwarna navy.
+3. Ditambahkan section **Kenalan dengan GMA** + preview video YouTube.
+4. Bagian "Apa yang ingin dicapai" lama dihapus.
+5. Ditambahkan tabel **Perbandingan GMA vs bisnis lain**.
+6. Ditambahkan **6 kartu testimoni** dengan tombol video YouTube.
+7. Ditambahkan **galeri legalitas** dan FAQ diletakkan di bagian bawah.
 
-## Mengubah tautan pendaftaran
-Buka `script.js`, lalu ganti nilai:
+## Cara mengganti link penting
+Buka `script.js`, lalu ubah bagian berikut:
 
-```js
-const OFFICIAL_REGISTRATION_URL = 'https://affiliate.garudaqu.com/';
-```
+- `registrationUrl` → isi dengan link daftar resmi Queen
+- `whatsappNumber` → nomor WhatsApp Queen
+- `whatsappMessage` → pesan default WhatsApp
+- `explainerVideo.url` → link video penjelasan GMA
+- `testimonials[].videoUrl` → link video testimoni satu per satu
+- `testimonials[].name`, `role`, `text`, `highlight` → isi sesuai data asli
 
-dengan link referral resmi milik Queen.
+## Cara mengganti gambar
+- Poster utama: ganti file `assets/poster.jpg`
+- Legalitas: ganti file `assets/legalitas-1.png` sampai `assets/legalitas-4.png`
 
-## Nomor WhatsApp
-Nomor sudah diatur ke:
-`+62 882-9352-8853`
+## Hosting
+Bisa langsung di-upload ke:
+- **GitHub Pages**
+- **Vercel**
 
-Format tautan WhatsApp:
-`6288293528853`
-
-## Deploy ke Vercel
-- Upload folder ini ke repository GitHub.
-- Impor repository ke Vercel.
-- Framework preset: `Other`.
-- Build command: kosong.
-- Output directory: kosong / root.
-
-## Deploy ke GitHub Pages
-- Push seluruh file ke repository.
-- Buka Settings → Pages.
-- Pilih Deploy from branch.
-- Pilih branch `main` dan folder `/root`.
+Tanpa build tools, tanpa framework, cukup static hosting.
