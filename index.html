@@ -15,10 +15,23 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Kembali ke atas">
-        <img src="assets/gma-logo.png" alt="GMA Affiliate" class="brand-logo">
+        <span class="brand-logo-wrap">
+          <img src="assets/gma-logo.png" alt="GMA Affiliate" class="brand-logo">
+        </span>
+        <span class="brand-name">QueenGMA</span>
       </a>
-      <nav class="header-actions">
+
+      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-controls="mainNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header-actions" id="mainNav" aria-label="Navigasi utama">
+        <a class="header-link" href="#keluh-kesah">Peluang</a>
+        <a class="header-link" href="#gma">Cara Kerja</a>
+        <a class="header-link" href="#testimoni">Testimoni</a>
+        <a class="header-link" href="#legalitas">Legalitas</a>
         <a class="header-link" href="#faq">FAQ</a>
+        <a class="header-cta" href="#daftar">Daftar</a>
       </nav>
     </div>
   </header>
@@ -27,21 +40,29 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy">
-          
-          <h1>Daripada HP cuma untuk hiburan, mulai manfaatkan untuk <span>mewujudkan penghasilan tambahan.</span></h1>
-          <p class="hero-lead">Gabung bersama <strong>GMA Megapro Affiliate by GarudaQu</strong> dan pelajari sistemnya dengan pendampingan Queen. Cocok untuk pemula, orang tua, anak muda, karyawan, ibu rumah tangga, sampai pensiunan.</p>
+          <h1>HP Kamu Bisa <span>Menghasilkan Uang</span> Setiap Hari 🚀</h1>
+          <p class="hero-lead">Bergabunglah bersama ribuan mitra <strong>GMA Megapro Affiliate.</strong></p>
 
-          <div class="cta-group"><a class="btn btn-primary" href="#daftar">Daftar Sekarang</a></div>
-        </div>
+          <div class="hero-stats" aria-label="Statistik GMA">
+            <div class="stat-card">
+              <strong>10 Juta+</strong>
+              <span>Anggota Aktif</span>
+            </div>
+            <div class="stat-card">
+              <strong>Rp80 Juta</strong>
+              <span>Bonus dalam 4 Bulan</span>
+            </div>
+          </div>
 
-        <div class="poster-card">
-          <img src="assets/poster.jpg" alt="Poster promosi GMA Affiliate bersama Queen" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
-          <div class="poster-placeholder" hidden>
-            <span>POSTER PROMOSI</span>
-            <strong>Letakkan poster Anda di:</strong>
-            <code>assets/poster.jpg</code>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#daftar">🚀 Daftar Sekarang</a>
+            <a class="btn btn-whatsapp" id="heroWhatsapp" href="https://wa.me/6288293528853" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
+
+        <figure class="poster-card">
+          <img src="assets/poster.jpg" alt="Poster promosi GMA Affiliate bersama Queen" width="768" height="1376" loading="eager" />
+        </figure>
       </div>
     </section>
 

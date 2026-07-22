@@ -148,3 +148,27 @@ renderTestimonials();
 document.querySelectorAll('section,.card,.testimonial-card').forEach(el=>el.classList.add('reveal'));
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+
+function initMobileMenu() {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('mainNav');
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  });
+}
+
+initMobileMenu();
