@@ -2,10 +2,16 @@ const SITE_CONFIG = {
   registrationUrl: 'https://affiliate.garudaqu.com/',
   whatsappNumber: '6288293528853',
   whatsappMessage: 'Halo Queen, saya ingin konsultasi tentang GMA Affiliate by GarudaQu.',
-  explainerVideo: {
-    title: 'Video penjelasan GMA - ganti dengan video resmi Anda',
-    url: 'https://www.youtube.com/watch?v=VIDEO_ID_GMA'
-  },
+  explainerVideos: [
+    {
+      title: 'Video penjelasan GMA 1 - ganti dengan video resmi Anda',
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_GMA_1'
+    },
+    {
+      title: 'Video penjelasan GMA 2 - ganti dengan video resmi Anda',
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_GMA_2'
+    }
+  ],
   testimonials: [
     {
       name: 'Budi Santoso',
@@ -84,12 +90,18 @@ function applyThumbnail(el, url) {
 }
 
 function renderExplainerVideo() {
+  const [video1, video2] = SITE_CONFIG.explainerVideos;
   const preview = document.getElementById('explainerVideoPreview');
-  const link = document.getElementById('explainerVideoLink');
-  const title = document.getElementById('explainerVideoTitle');
-  link.href = SITE_CONFIG.explainerVideo.url;
-  title.textContent = SITE_CONFIG.explainerVideo.title;
-  applyThumbnail(preview, SITE_CONFIG.explainerVideo.url);
+  const previewLink = document.getElementById('explainerVideoLink');
+  const previewTitle = document.getElementById('explainerVideoTitle');
+  const button1 = document.getElementById('explainerVideoButton1');
+  const button2 = document.getElementById('explainerVideoButton2');
+
+  previewLink.href = video1.url;
+  previewTitle.textContent = video1.title;
+  button1.href = video1.url;
+  button2.href = video2.url;
+  applyThumbnail(preview, video1.url);
 }
 
 function renderTestimonials() {
