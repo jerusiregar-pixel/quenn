@@ -143,3 +143,8 @@ function initLinks() {
 initLinks();
 renderExplainerVideo();
 renderTestimonials();
+
+
+document.querySelectorAll('section,.card,.testimonial-card').forEach(el=>el.classList.add('reveal'));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));

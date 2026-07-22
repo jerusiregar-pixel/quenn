@@ -181,3 +181,6 @@ footer{background:#091221;color:#c2cfdf;padding:32px 0}
   .problem-grid,.testimonial-grid{grid-template-columns:1fr}
   .phone-link{font-size:20px}
 }
+
+
+.brand-logo{height:48px;width:auto}.reveal{opacity:0;transform:translateY(40px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
