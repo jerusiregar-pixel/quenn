@@ -1,66 +1,18 @@
 const SITE_CONFIG = {
-  registrationUrl: 'https://affiliate.garudaqu.com/',
+  registrationUrl: 'https://affiliate.garudaqu.com/register/AF24695614',
   whatsappNumber: '6288293528853',
-  whatsappMessage: 'Halo Queen, saya ingin konsultasi tentang GMA Affiliate by GarudaQu.',
+  whatsappMessage: 'Halo Queen, saya ingin bertanya tentang GMA Megapro Affiliate.',
   explainerVideos: [
-    {
-      title: 'Video penjelasan GMA 1 - ganti dengan video resmi Anda',
-      url: 'https://www.youtube.com/watch?v=VIDEO_ID_GMA_1'
-    },
-    {
-      title: 'Video penjelasan GMA 2 - ganti dengan video resmi Anda',
-      url: 'https://www.youtube.com/watch?v=VIDEO_ID_GMA_2'
-    }
+    { title: 'Dr. Robert Sesi 1: Pengenalan GMA Megapro', url: 'https://youtu.be/DtKz2pO7gGI?si=GbzzP8Q90XdfVDYt' },
+    { title: 'Dr. Robert Sesi 2: Penjelasan Lanjutan GMA Megapro', url: 'https://youtu.be/gfNHu6XbWK8?si=QpEMwyMNlwWhz2lQ' }
   ],
   testimonials: [
-    {
-      name: 'Budi Santoso',
-      role: 'Mahasiswa • 19 tahun',
-      stars: 5,
-      text: 'Saya baru mulai, tapi merasa terbantu karena penjelasannya mudah dipahami dan ada arahan langkah demi langkah dari mentor.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_1'
-    },
-    {
-      name: 'Siti Aminah',
-      role: 'Ibu Rumah Tangga • 45 tahun',
-      stars: 5,
-      text: 'Saya senang karena bisa belajar dari rumah menggunakan handphone. Cocok untuk saya yang ingin produktif tanpa harus ribet.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_2'
-    },
-    {
-      name: 'Pak Hendra',
-      role: 'Karyawan Swasta • 58 tahun',
-      stars: 5,
-      text: 'Awalnya saya ragu, namun setelah dijelaskan dengan baik saya mulai paham. Sistemnya lebih mudah diikuti daripada yang saya bayangkan.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_3'
-    },
-    {
-      name: 'Nina Marlina',
-      role: 'Karyawan • 31 tahun',
-      stars: 5,
-      text: 'Saya mencari tambahan penghasilan yang fleksibel. Yang saya suka, saya bisa menyesuaikan waktu belajar dengan pekerjaan utama.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_4'
-    },
-    {
-      name: 'Bu Rahayu',
-      role: 'Pensiunan • 63 tahun',
-      stars: 5,
-      text: 'Saya bukan orang yang terlalu paham teknologi, tetapi tampilannya sederhana dan penjelasannya sabar, jadi saya merasa lebih percaya diri.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_5'
-    },
-    {
-      name: 'Dimas Pratama',
-      role: 'Anak Muda • 24 tahun',
-      stars: 5,
-      text: 'Bagi saya yang masih muda, ini menarik karena semuanya bisa dimulai dari handphone dan ada banyak materi yang membantu untuk belajar.',
-      highlight: 'Silakan ganti dengan pencapaian / ringkasan hasil',
-      videoUrl: 'https://www.youtube.com/watch?v=VIDEO_TESTI_6'
-    }
+    { name: 'Ibu Hj. Lili Riana', role: 'Pengalaman anggota senior', stars: 5, text: 'Kisah anggota senior yang menunjukkan bahwa program dapat dipelajari oleh berbagai kelompok usia.', highlight: 'Testimoni anggota GMA Megapro', videoUrl: 'https://youtu.be/FDMiipuqbX0?si=f4RYOn-rCpLbksNr' },
+    { name: 'Anggota Usia 19 Tahun', role: 'Pengalaman anggota muda', stars: 5, text: 'Cerita anak muda berusia 19 tahun mengenai pengalamannya menjalankan aktivitas di Megapro.', highlight: 'Perspektif generasi muda', videoUrl: 'https://youtu.be/lg4o4nJzMTI?si=xASy8ZhUI1PfN5vv' },
+    { name: 'Anggota Muda GMA', role: 'Perjalanan anggota muda', stars: 5, text: 'Pengalaman anggota muda dalam mempelajari sistem dan mengembangkan aktivitas bersama GMA Megapro.', highlight: 'Cerita perjalanan anggota', videoUrl: 'https://youtu.be/kVJrwhWTiMM?si=Xwxy06D7i8O3GZS1' },
+    { name: 'Ibu Lidya Sembiring', role: 'Kisah pengalaman finansial', stars: 5, text: 'Testimoni Ibu Lidya Sembiring mengenai perjalanan dan hasil yang ia sampaikan setelah mengikuti Megapro.', highlight: 'Hasil merupakan pengalaman pribadi', videoUrl: 'https://youtu.be/LxuSnRe3iKg?si=6wcnFzxgM_rzCgTE' },
+    { name: 'Bapak Chris Sebayang', role: 'Pengalaman anggota GMA', stars: 5, text: 'Bapak Chris Sebayang membagikan pandangan dan pengalamannya selama mengenal program Megapro.', highlight: 'Testimoni langsung anggota', videoUrl: 'https://youtu.be/fxHRCwv78sQ?si=CkEC2JqQ2loSm8MQ' },
+    { name: 'Ibu Eni Ernawati', role: 'Pengalaman anggota GMA', stars: 5, text: 'Ibu Eni Ernawati menceritakan pengalamannya mengikuti GMA Megapro Affiliate.', highlight: 'Cerita anggota Megapro', videoUrl: 'https://youtu.be/hYzDeWpPOOs?si=4P3oYEEi0PWZQuMg' }
   ]
 };
 
@@ -124,9 +76,9 @@ function renderTestimonials() {
             </div>
           </div>
           <div class="stars" aria-label="${item.stars} bintang">${stars}</div>
-          <div class="testimonial-text">“${item.text}”</div>
+          <div class="testimonial-text">${item.text}</div>
           <div class="testimonial-highlight">${item.highlight}</div>
-          <a class="watch-btn" href="${item.videoUrl}" target="_blank" rel="noopener">Tonton Testimoni</a>
+          <a class="watch-btn" href="${item.videoUrl}" target="_blank" rel="noopener">Tonton di YouTube</a>
         </div>
       </article>
     `;
@@ -139,7 +91,7 @@ function renderTestimonials() {
 
 function initLinks() {
   const waLink = buildWhatsAppLink(SITE_CONFIG.whatsappNumber, SITE_CONFIG.whatsappMessage);
-  ['heroWhatsapp','gmaWhatsapp','finalWhatsapp','floatingWhatsapp'].forEach((id) => {
+  ['heroWhatsapp'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) el.href = waLink;
   });
